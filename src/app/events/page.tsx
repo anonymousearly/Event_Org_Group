@@ -33,6 +33,7 @@ function eventDetails() {
           <p className="text-white font-medium text-lg">
             <span className="text-yellow-500 font-bold">|</span> A comprehensive
             overview of all the upcoming events
+            
           </p>
         </div>
       </div>
@@ -42,7 +43,7 @@ function eventDetails() {
           {/* Date and Title */}
           <div className="title font-normal text-xl">
             <p className="text-yellow-500 font-normal text-2xl mt-20">
-              September 2023
+            {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
             </p>
             <h1 className="text-white font-medium text-7xl mt-4">
               Booked Event
